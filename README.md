@@ -18,7 +18,7 @@ wifiList(function (err, networks) {
 Running the above will list nearby wifi networks.
 
 ```js
-[ { name: 'Dykstra Home',
+[ { ssid: 'Dykstra Home',
     networkType: 'Infrastructure',
     authentication: 'WPA2-Personal',
     encryption: 'CCMP',
@@ -28,7 +28,7 @@ Running the above will list nearby wifi networks.
     radioType: '802.11n',
     basicRatesMbps: '1 2 5.5 11',
     otherRatesMbps: '6 9 12 18 24 36 48 54' },
-  { name: 'Home Wireless',
+  { ssid: 'Home Wireless',
     networkType: 'Infrastructure',
     authentication: 'WPA2-Personal',
     encryption: 'CCMP',

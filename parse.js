@@ -1,19 +1,21 @@
 module.exports = function parse(networksText) {
 	return networksText
 		.toString()
-		.split(/^SSID \d+ : /m)
+		.trim()
+		.split(/\n\r?\n/)
 		.slice(1)
 		.map(parseNetwork)
 }
 
 function parseNetwork(networkText) {
-	return ('name : ' + networkText)
-		.trim()
+	return networkText
 		.split('\n')
 		.reduce(getProperty, {})
 }
 
 function getProperty(object, line) {
+	if (!line) return object
+
 	var parts = line.split(' : ')
 	var key = formatKey(parts[0])
 	if (!object[key]) {
@@ -38,5 +40,4 @@ function formatValue(key, value) {
 	if (key === 'channel') return Number(value)
 
 	return value
-
 }
