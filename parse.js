@@ -7,28 +7,36 @@ module.exports = function parse(networksText) {
 }
 
 function parseNetwork(networkText) {
-	var lines = ('name : ' + networkText).trim().split('\n')
+	return ('name : ' + networkText)
+		.trim()
+		.split('\n')
+		.reduce(getProperty, {})
+}
 
-	var properties = lines.reduce(function (memo, line) {
-		var parts = line.split(' : ')
-		var key = parts[0].trim()
-		var value = parts[1].trim()
-		if (!memo[key]) {
-			memo[key] = value
-		}
-		return memo
-	}, {})
-
-	return {
-		name: properties['name'],
-		networkType: properties['Network type'],
-		authentication: properties['Authentication'],
-		encryption: properties['Encryption'],
-		bssid: properties['BSSID 1'],
-		channel: properties['Signal'],
-		signal: properties['Radio type'],
-		radioType: properties['Channel'],
-		basicRates: properties['Basic rates (Mbps)'],
-		otherRates: properties['Other rates (Mbps)'],
+function getProperty(object, line) {
+	var parts = line.split(' : ')
+	var key = formatKey(parts[0])
+	if (!object[key]) {
+		object[key] = formatValue(key, parts[1])
 	}
+	return object
+}
+
+function formatKey(key) {
+	return key
+		.trim()
+		.toLowerCase()
+		.replace(/[^a-z]+([a-z]?)/g, function (_, match1) {
+			return match1.toUpperCase()
+		})
+}
+
+function formatValue(key, value) {
+	value = value.trim()
+
+	if (key === 'signal') return Number(value.slice(0, -1)) / 100
+	if (key === 'channel') return Number(value)
+
+	return value
+
 }

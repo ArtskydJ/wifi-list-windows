@@ -6,7 +6,7 @@ SSID 1 : Dykstra Home
     Network type            : Infrastructure
     Authentication          : WPA2-Personal
     Encryption              : CCMP
-    BSSID 1                 : c2:9f:db:f7:e8:eb
+    BSSID 1                 : 15:9e:f2:29:33:e5
          Signal             : 99%
          Radio type         : 802.11n
          Channel            : 9
@@ -17,7 +17,7 @@ SSID 2 : Home Wireless
     Network type            : Infrastructure
     Authentication          : WPA2-Personal
     Encryption              : CCMP
-    BSSID 1                 : 20:76:00:84:5b:25
+    BSSID 1                 : 12:34:56:78:90:ab
          Signal             : 28%
          Radio type         : 802.11n
          Channel            : 1
