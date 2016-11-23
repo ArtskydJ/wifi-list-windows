@@ -1,0 +1,27 @@
+{
+  "name": "wifi-list-windows",
+  "version": "1.0.0",
+  "description": "Like mafintosh/wifi-list, but for Windows",
+  "main": "parse.js",
+  "bin": "bin.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtskydJ/wifi-list-windows.git"
+  },
+  "keywords": [],
+  "author": "Joseph Dykstra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArtskydJ/wifi-list-windows/issues"
+  },
+  "homepage": "https://github.com/ArtskydJ/wifi-list-windows#readme",
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}

@@ -1,0 +1,26 @@
+
+Interface name : Wi-Fi
+There are 2 networks currently visible.
+
+SSID 1 : Dykstra Home
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+    BSSID 1                 : c2:9f:db:f7:e8:eb
+         Signal             : 99%
+         Radio type         : 802.11n
+         Channel            : 9
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 2 : Home Wireless
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP
+    BSSID 1                 : 20:76:00:84:5b:25
+         Signal             : 28%
+         Radio type         : 802.11n
+         Channel            : 1
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
