@@ -1,6 +1,6 @@
 {
   "name": "wifi-list-windows",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Like mafintosh/wifi-list, but for Windows",
   "main": "./index.js",
   "bin": {
@@ -16,7 +16,14 @@
     "type": "git",
     "url": "git+https://github.com/ArtskydJ/wifi-list-windows.git"
   },
-  "keywords": [ "list", "wireless", "wifi", "networks", "show", "cli" ],
+  "keywords": [
+    "list",
+    "wireless",
+    "wifi",
+    "networks",
+    "show",
+    "cli"
+  ],
   "author": "Joseph Dykstra",
   "license": "MIT",
   "bugs": {
