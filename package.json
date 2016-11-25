@@ -1,6 +1,6 @@
 {
   "name": "wifi-list-windows",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Like mafintosh/wifi-list, but for Windows",
   "main": "./index.js",
   "bin": {
