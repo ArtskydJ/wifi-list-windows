@@ -5,6 +5,6 @@ module.exports = function list(cb) {
 	cp.exec('netsh wlan show networks', function (err, networksText) {
 		if (err) return cb(err)
 
-		cb(parse(networksText))
+		cb(null, parse(networksText))
 	})
 }
