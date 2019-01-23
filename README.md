@@ -80,7 +80,7 @@ Looks up the list of networks. Calls `cb(err, networks)` when it's ready.
     otherRatesMbps: '6 9 12 18 24 36 48 54' } ]
 ```
 
-# install
+# Install
 
 Install with [npm](https://nodejs.org/en/download)
 
